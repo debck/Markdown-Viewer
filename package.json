@@ -1,0 +1,23 @@
+{
+  "name": "markdown-viewer",
+  "version": "1.0.0",
+  "description": "A realtime markdown viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debck/Markdown-Viewer.git"
+  },
+  "author": "Debasish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/debck/Markdown-Viewer/issues"
+  },
+  "homepage": "https://github.com/debck/Markdown-Viewer#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
