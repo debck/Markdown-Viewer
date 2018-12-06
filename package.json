@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/debck/Markdown-Viewer#readme",
   "dependencies": {
+    "browserify": "^16.2.3",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "showdown": "^1.9.0"
   }
 }

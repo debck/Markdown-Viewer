@@ -1,22 +1,19 @@
 html, body, section, .full-height {
     height: 100%;
-} 
-#pad{
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
 
+#input , #markdown{
     border: solid;
-    border-width: 5px;
+    border-width: 30px;
+    font-size: 18px;
     overflow: auto;
+    border-color: #1DA1F2;
     outline: none;
+    padding-top: 12px;
     resize: none;
-
+    color: orange;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
 }
 
-#markdown {
-    overflow: auto;
-    border:solid;
-    border-width: 5px;
-}

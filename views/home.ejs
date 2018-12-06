@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Realtime Markdown Viewer</title>
+    <title>Markdown Viewer</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -9,12 +9,13 @@
 <body class="container-fluid">	
 
     <section class="row">
-        <textarea class="col-md-6 full-height" id="pad">Write your text here..</textarea>
+        <textarea class="col-md-6 full-height" id="input">Your Text here...</textarea>
         <div class="col-md-6 full-height" id="markdown"></div>
     </section>
 
-    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
+    
     <script src="script.js"></script>
+    <script src="bundle.js"></script>
 
 </body>
 </html>

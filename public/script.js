@@ -1,15 +1,17 @@
+
 window.onload = function() {
+    var showdown = require("showdown");
     var converter = new showdown.Converter();
-    var pad = document.getElementById('pad');
+    var input = document.getElementById('input');
     var markdownArea = document.getElementById('markdown');   
 
     var convertTextAreaToMarkdown = function(){
-        var markdownText = pad.value;
+        var markdownText = input.value;
         html = converter.makeHtml(markdownText);
         markdownArea.innerHTML = html;
     };
 
-    pad.addEventListener('input', convertTextAreaToMarkdown);
+    input.addEventListener('input', convertTextAreaToMarkdown);
 
     convertTextAreaToMarkdown();
 };
