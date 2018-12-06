@@ -4,6 +4,7 @@
   "description": "A realtime markdown viewer",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --exec babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,12 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "showdown": "^1.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "nodemon": "^1.18.7"
   }
 }
