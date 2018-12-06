@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'));
 
 //routes
 app.get('/', (req,res) => {
-	res.render('pad');
+	res.render('home');
 });
 
 var port = process.env.PORT || 4000;

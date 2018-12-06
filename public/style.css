@@ -1,11 +1,11 @@
 html, body, section, .full-height {
     height: 100%;
 } 
-
 #pad{
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 
-    border: none;
+    border: solid;
+    border-width: 5px;
     overflow: auto;
     outline: none;
     resize: none;
@@ -17,5 +17,6 @@ html, body, section, .full-height {
 
 #markdown {
     overflow: auto;
-    border-left: 1px solid black;
+    border:solid;
+    border-width: 5px;
 }
