@@ -2,7 +2,9 @@ html,
 body,
 section,
 .holder {
-  height: 100%;
+  height: 100vh;
+  margin:0;
+  padding: 0;
 }
 
 #input,
@@ -19,4 +21,13 @@ section,
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  height: 100%;
+  width: 50%;
+}
+
+button {
+  position:absolute;
+  top: 8vh;
+  left:42vw;
+  z-index: 1;
 }

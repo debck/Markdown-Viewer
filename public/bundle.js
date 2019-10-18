@@ -5150,6 +5150,7 @@ window.onload = function() {
   var input = document.getElementById("input");
   var markdownArea = document.getElementById("markdown");
   const copy = document.querySelector("#copy");
+  const infotxt = document.querySelector(".infotext");
 
   var convertTextAreaToMarkdown = function() {
     var markdownText = input.value;
@@ -5161,10 +5162,9 @@ window.onload = function() {
 
   convertTextAreaToMarkdown();
 
-  const copyToClipboard = () => {
+  const copyToClipboard = e => {
     const el = document.createElement("textarea");
     const str = input.value;
-    console.log(str);
     el.value = str;
     el.setAttribute("readonly", "");
     el.style.position = "absolute";
@@ -5173,6 +5173,20 @@ window.onload = function() {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
+    console.log(e);
+    e.target.classList.remove("btn-info");
+    e.target.classList.add("btn-success");
+    e.target.textContent = "copied !!!";
+
+    setTimeout(
+      btn => {
+        btn.classList.remove("btn-success");
+        btn.classList.add("btn-info");
+        btn.textContent = "copy";
+      },
+      1500,
+      e.target
+    );
   };
 
   copy.addEventListener("click", copyToClipboard);
