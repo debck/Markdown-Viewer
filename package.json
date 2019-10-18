@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
+    "build": "browserify public/script.js > public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

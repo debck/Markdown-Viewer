@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Markdown Viewer</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-</head>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<body class="container-fluid">	
-
+  <body class="container-fluid">
     <section class="row">
-        <textarea class="col-md-6 holder" id="input"># Your Text here....</textarea>
-        <div class="col-md-6 holder" id="markdown"></div>
+       
+          <div style="background: #FFFFFF;width:100%">  
+              <button id="copy" class="btn btn-info">Copy</button>          
+          </div>
+          <textarea class="col-md-6 holder" id="input"># Your Text here....</textarea>
+          <div class="col-md-6 holder" id="markdown"></div>
+      
     </section>
     <script src="script.js"></script>
     <script src="bundle.js"></script>
-
-</body>
+  </body>
 </html>
