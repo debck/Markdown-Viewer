@@ -1,19 +1,22 @@
-html, body, section, .holder {
-    height: 100%;
+html,
+body,
+section,
+.holder {
+  height: 100%;
 }
 
-#input , #markdown{
-    border: solid;
-    border-width: 30px;
-    font-size: 18px;
-    overflow: auto;
-    border-color: #1DA1F2;
-    outline: none;
-    padding-top: 12px;
-    resize: none;
-    color: orange;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+#input,
+#markdown {
+  border: solid;
+  border-width: 30px;
+  font-size: 18px;
+  overflow: auto;
+  border-color: #1da1f2;
+  outline: none;
+  padding-top: 12px;
+  resize: none;
+  color: orange;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
-
